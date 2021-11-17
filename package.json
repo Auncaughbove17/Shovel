@@ -2,7 +2,7 @@
   "name": "shovel",
   "version": "0.10.1",
   "private": true,
-  "homepage": "https://auncaughbove17.github.io/Shovel/",
+  "homepage": "https://auncaughbove17.github.io/shovel/",
   "dependencies": {
     "@chakra-ui/react": "^1.0.0",
     "@emotion/react": "^11.0.0",
@@ -51,7 +51,7 @@
     "husky": "^4.3.8",
     "lint-staged": "^10.5.4",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.3"
+    "typescript": "^4.5.2"
   },
   "husky": {
     "hooks": {

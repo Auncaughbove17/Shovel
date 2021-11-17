@@ -11,6 +11,13 @@ The long term goal of this app is to change that.
 
 In the project directory, you can run:
 
+### `npm run deploy`
+Deploy to github pages (configure in package.json)
+
+needs react-scripts. Install globally with: `npm i -g react-scripts`, or in current folder without -g
+also needs `npm install typescript`
+
+
 ### `npm start`
 
 Runs the app in the development mode.<br />
