@@ -22,6 +22,7 @@ interface SearchResultProps extends BoxProps {
  * Displays information for a single manifest
  */
 function SearchResult(props: SearchResultProps) {
+  const bucketURL = props.manifest.manifestURL.replace(/^(https:\/\/github\.com\/.*?\/.*?)\/.*$/gm,'$1'); 
   return (
     <VStack
       borderWidth="1px"
@@ -55,10 +56,10 @@ function SearchResult(props: SearchResultProps) {
       </div>
       <Text>{props.manifest.description}</Text>
       <p hidden={props.manifest.bucket === "main"}>
-        <CopyCode code={`scoop bucket add ${props.manifest.bucket}`} />
+        <CopyCode code={`scoop bucket add ${props.manifest.bucket} "${bucketURL}"`} />
       </p>
       <p>
-        <CopyCode code={`scoop install ${props.manifest.name}`} />
+        <CopyCode code={`scoop install ${props.manifest.bucket}/${props.manifest.name}`} />
       </p>
       {props.children}
     </VStack>

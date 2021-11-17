@@ -12,7 +12,7 @@ export function ManifestsProvider(props: React.ComponentPropsWithRef<any>) {
   async function getManifests() {
     try {
       const response = await fetch(
-        "https://mertd.github.io/shovel-data/manifests.json"
+        "https://auncaughbove17.github.io/Shovel/manifests.json"
       );
       const json = await response.json();
       setManifests(json as Manifest[]);
